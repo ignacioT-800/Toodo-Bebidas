@@ -5,10 +5,25 @@ body {
 h1 {
     color: #ffffff;
     text-shadow: 1px 2px #000000;
+    font-family: 'Nerko One', cursive;
+    font-size: 50px;
 }
 
+p {
+    font-family: 'Nerko One', cursive;
+}
+
+li {
+    font-family: 'Nerko One', cursive;
+}
+a{
+    font-family: 'Nerko One', cursive;
+    font-size: 20px;
+}
+
+
 .nosotros-container {
-    background-color: blueviolet;
+    background-color: #6E158D;
     width: 100%;
     height: 200px;
     margin-top: 40px;
@@ -24,39 +39,209 @@ h1 {
     margin-left: 20px;
 }
 
+.bebidasAlign {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .bebidasCon-container {
-    background-image: -webkit-linear-gradient(top, rgba(189, 21, 255, 0.418), rgba(19, 19, 19, 0.897)), url("images/cervezas.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(51, 36, 56, 0.418), rgba(19, 19, 19, 0.897)), url("images/bartender-making-delicious-cocktail.jpg");
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
     height: 500px;
     margin-top: 40px;
+
 }
 
 
 .bebidasCon-container h1 {
     color: #ffffff;
-    margin-left: 20px;
+    text-align: center;
+
 }
 
-.bebidasCon-container ul{
+.bebidasCon-container ul {
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 100px;
+}
+
+.mezclaTitulo {
+    background-color: #6E158D;
+    width: 100%;
+    height: 70px;
+    margin-top: 40px;
+}
+
+.mezclaTitulo h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+
+}
+
+.mezclaOpciones {
+    background-image: -webkit-linear-gradient(top, rgba(51, 36, 56, 0.418), rgba(19, 19, 19, 0.897)), url("images/fresh-cola-drink-with-green-lime.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 500px;
+}
+
+.mezclaOpciones ul {
     list-style-type: none;
     color: #ffffff;
     font-size: 25px;
-    line-height: 50px;
+    text-align: center;
+    padding-left: 0px;
 }
 
-.bebidasCon-container li{
-padding-left: 0;
-margin-left: 20px;
+.mezclaOpciones li {
+    padding-top: 45px;
 }
 
-.form-control{
+.promoContainer {
+    background-image: url("images/people-at-concert-with-smoke-overlay-texture.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 600px;
+    margin-top: 40px;
+}
+
+.promoTitulo {
+    background-color: #6E158D;
+}
+
+.promoTitulo h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.promoContenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.tarjeta {
+    background-image: -webkit-linear-gradient(top, rgba(51, 36, 56, 0.418), rgba(19, 19, 19, 0.897)), url("images/people-making-toast-with-beers.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+
+}
+
+.tarjeta p {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    font-family: 'Nerko One', cursive;
+
+}
+
+.tarjetaDos {
+    background-image: -webkit-linear-gradient(top, rgba(51, 36, 56, 0.418), rgba(19, 19, 19, 0.897)), url("images/capo.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+}
+
+.tarjetaDos p {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    font-family: 'Nerko One', cursive;
+
+}
+
+.precioTarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 250px;
+}
+
+.precioTarjetaDos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 205px;
+
+}
+
+input[type="text"] {
+    border-radius: 6px;
+    width: 550px;
+    height: 40px;
+
+}
+
+input[type="email"] {
+    border-radius: 6px;
+    width: 550px;
+    height: 40px;
+
+}
+input[type="submit"] {
+    border-radius: 6px;
+    background-color: #6E158D;
+    color:#ffffff;
+    height: 40px;
+    margin-bottom: 50px;
+    font-family: 'Nerko One', cursive;
+    letter-spacing: 2px;
+
+
+}
+
+textarea {
+    border-radius: 6px;
+    resize: none;
+    width: 550px;
+    height: 70px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.bebidasCon-container li {
+    padding-left: 0;
+}
+
+.form-control {
     display: none;
 }
 
-.btn-outline-success{
+.btn-outline-success {
     display: none;
 }
