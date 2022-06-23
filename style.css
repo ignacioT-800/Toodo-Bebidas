@@ -17,7 +17,8 @@ p {
 li {
     font-family: 'Nerko One', cursive;
 }
-a{
+
+a {
     font-family: 'Nerko One', cursive;
     font-size: 20px;
 }
@@ -33,6 +34,7 @@ a{
 .nosotros-container p {
     color: #ffffff;
     margin-left: 20px;
+    font-size: 1.5rem;
 }
 
 .nosotros-container h1 {
@@ -42,7 +44,7 @@ a{
 
 .bebidasAlign {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
 
@@ -70,7 +72,9 @@ a{
     color: #ffffff;
     font-size: 30px;
     line-height: 100px;
+    padding-left: 0;
 }
+
 
 .mezclaTitulo {
     background-color: #6E158D;
@@ -117,7 +121,7 @@ a{
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    height: 600px;
+    height: 100%;
     margin-top: 40px;
 }
 
@@ -135,7 +139,7 @@ a{
 
 .promoContenido {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-around;
     margin-top: 50px;
 }
@@ -146,7 +150,7 @@ a{
     background-size: cover;
     height: 400px;
     width: 300px;
-
+    margin-bottom: 50px;
 }
 
 .tarjeta p {
@@ -166,6 +170,7 @@ a{
     background-size: cover;
     height: 400px;
     width: 300px;
+    margin-bottom: 50px;
 }
 
 .tarjetaDos p {
@@ -207,10 +212,11 @@ input[type="email"] {
     height: 40px;
 
 }
+
 input[type="submit"] {
     border-radius: 6px;
     background-color: #6E158D;
-    color:#ffffff;
+    color: #ffffff;
     height: 40px;
     margin-bottom: 50px;
     font-family: 'Nerko One', cursive;
@@ -229,15 +235,11 @@ textarea {
 form {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     width: 100%;
 }
 
-
-
-.bebidasCon-container li {
-    padding-left: 0;
-}
 
 .form-control {
     display: none;
@@ -245,4 +247,42 @@ form {
 
 .btn-outline-success {
     display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nosotros-container p {
+        font-size: 1rem;
+    }
+    
+    .bebidasCon-container ul {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .bebidasAlign {
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input[type="text"] {
+        width: 100%;
+
+    }
+
+    input[type="email"] {
+        width: 100%;
+
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+
 }
